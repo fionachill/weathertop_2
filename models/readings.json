@@ -1,0 +1,54 @@
+{
+  "file": "./models/readings.json",
+  "readings": [
+    {
+      "code": 400,
+      "temp": 20,
+      "wSpeed": 5,
+      "_id": "55d8063d-ed12-4051-9114-40e24713fde7",
+      "stationid": "e34b1c2b-4db7-4745-bb15-facc0516ef26"
+    },
+    {
+      "code": 400,
+      "temp": 20,
+      "wSpeed": 5,
+      "_id": "b82673c4-abef-4f3d-bd22-a48c214a84a7",
+      "stationid": "e34b1c2b-4db7-4745-bb15-facc0516ef26"
+    },
+    {
+      "code": 400,
+      "temp": 12,
+      "wSpeed": 8,
+      "_id": "cf7744b7-9b27-4fd7-b631-ea9aac822584",
+      "stationid": "e34b1c2b-4db7-4745-bb15-facc0516ef26"
+    },
+    {
+      "code": 800,
+      "temp": 0.5,
+      "wSpeed": 3.5,
+      "_id": "01cf2f62-37b5-4842-b86c-8b4c56ddfc5d",
+      "stationid": "b60b9a34-9275-4f5d-9667-629e101bcc50"
+    },
+    {
+      "code": 600,
+      "temp": 6,
+      "wSpeed": 2,
+      "_id": "79a59aab-fae8-4de1-b0c9-f03f0748ca45",
+      "stationid": "b60b9a34-9275-4f5d-9667-629e101bcc50"
+    },
+    {
+      "code": 700,
+      "temp": 8,
+      "wSpeed": 1,
+      "_id": "30f46531-7f68-4515-bfec-da68d4623c65",
+      "stationid": "90174d79-6c4b-4aef-bc58-0264ea03b5af"
+    },
+    {
+      "code": 200,
+      "temp": 0.5,
+      "wSpeed": 3.5,
+      "_id": "86c29394-0f00-48ee-a20e-125e2643b613",
+      "stationid": "90174d79-6c4b-4aef-bc58-0264ea03b5af"
+    }
+  ]
+}
