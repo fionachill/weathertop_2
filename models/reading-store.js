@@ -44,6 +44,7 @@ export const readingStore = {
         reading.code = updatedReading.code;
         reading.temp = updatedReading.temp;
         reading.wSpeed = updatedReading.wSpeed;
+        reading.wDir = updatedReading.wDir;
         reading.pressure = updatedReading.pressure;
         await db.write();
     }

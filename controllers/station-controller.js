@@ -25,10 +25,13 @@ export const stationController = {
            code: Number(request.body.code),
            temp: Number(request.body.temp),
            wSpeed: Number(request.body.wSpeed), 
+           wDir: Number(request.body.wDir),
            pressure: Number(request.body.pressure),
            wCode: String(conversions.getWCode(request.body.code)),
            fTemp: Number(conversions.fTemp(request.body.temp)),
-           bFort: Number(conversions.bFort(request.body.wSpeed))
+           bFort: Number(conversions.bFort(request.body.wSpeed)),
+           wCompass: String(conversions.getWCompass(request.body.wDir)),
+           windChill: Number(conversions.getWindChill(request.body.temp, request.body.wSpeed))
         };
         console.log(`adding new reading to ${station.title}`);
         await readingStore.addReading(station._id, newReading);

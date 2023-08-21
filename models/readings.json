@@ -66,6 +66,80 @@
       "bFort": 1,
       "_id": "e4d8fd6a-fcf5-4e50-ae07-3fb0a83442f6",
       "stationid": "71c8c8ef-3333-4816-8327-7b987b24ab31"
+    },
+    {
+      "code": 800,
+      "temp": 0.5,
+      "wSpeed": 3.5,
+      "wDir": 90,
+      "pressure": 1002,
+      "wCode": "Thunder",
+      "fTemp": 32.9,
+      "bFort": 1,
+      "_id": "ceb83b2f-0587-4a31-b9bc-ad27716f0d18",
+      "stationid": "7c260d88-21f9-4d34-9815-bcf31bc32941"
+    },
+    {
+      "code": 600,
+      "temp": 6,
+      "wSpeed": 2,
+      "wDir": 96,
+      "pressure": 1004,
+      "wCode": "Rain",
+      "fTemp": 42.8,
+      "bFort": 1,
+      "_id": "74c4fb1f-245e-415d-9aea-2460461bdf88",
+      "stationid": "7c260d88-21f9-4d34-9815-bcf31bc32941"
+    },
+    {
+      "code": 700,
+      "temp": 8,
+      "wSpeed": 1,
+      "wDir": 101,
+      "pressure": 1005,
+      "wCode": "Snow",
+      "fTemp": 46.4,
+      "bFort": 0,
+      "_id": "f5539029-207e-46dd-90fb-a92e4d88786a",
+      "stationid": "7c260d88-21f9-4d34-9815-bcf31bc32941"
+    },
+    {
+      "code": 700,
+      "temp": 8,
+      "wSpeed": 1,
+      "wDir": 98,
+      "pressure": 999,
+      "wCode": "Snow",
+      "fTemp": 46.4,
+      "bFort": 0,
+      "_id": "648d20cc-bf4e-4791-877e-cab390797513",
+      "stationid": "5096b827-c69f-48c5-9ecc-8860eadf44f9"
+    },
+    {
+      "code": 200,
+      "temp": 0.5,
+      "wSpeed": 3.5,
+      "wDir": 102,
+      "pressure": 1000,
+      "wCode": "Partial Clouds",
+      "fTemp": 32.9,
+      "bFort": 1,
+      "_id": "39c50e43-9369-4bee-a163-aac5cdaba126",
+      "stationid": "5096b827-c69f-48c5-9ecc-8860eadf44f9"
+    },
+    {
+      "code": 100,
+      "temp": 8,
+      "wSpeed": 1,
+      "wDir": 101,
+      "pressure": 1005,
+      "wCode": "Clear",
+      "fTemp": 46.4,
+      "bFort": 0,
+      "wCompass": "East",
+      "windChill": 8,
+      "_id": "9b5041fd-4427-42b1-8297-378a06fabd0d",
+      "stationid": "7c260d88-21f9-4d34-9815-bcf31bc32941"
     }
   ]
 }

@@ -3,23 +3,11 @@
   "stations": [
     {
       "title": "Tramore",
-      "_id": "01"
+      "_id": "7c260d88-21f9-4d34-9815-bcf31bc32941"
     },
     {
-      "title": "Dromore",
-      "_id": "05"
-    },
-    {
-      "title": "Gorey",
-      "_id": "0c5adf5b-3b4e-4689-85df-6a6b78996ff0"
-    },
-    {
-      "title": "Tramore",
-      "_id": "fddacb06-154c-43d6-81b1-7c1842f6273f"
-    },
-    {
-      "title": "Dromore",
-      "_id": "71c8c8ef-3333-4816-8327-7b987b24ab31"
+      "title": "Dunmore",
+      "_id": "5096b827-c69f-48c5-9ecc-8860eadf44f9"
     }
   ]
 }

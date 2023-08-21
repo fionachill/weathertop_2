@@ -56,5 +56,52 @@ export const conversions = {
             }
                 return bFort;
             },
-        };
+
+        getWCompass(wDir){
+            let wCompass = null;
+            if ((wDir > 348.75) && (wDir < 11.25)) {
+                wCompass = "North";
+            } else if ((wDir > 11.25) && (wDir < 33.75)) {
+                wCompass = "North North East";
+            } else if ((wDir > 33.75) && (wDir < 56.25)) {
+                wCompass = "North East";
+            } else if ((wDir > 56.25) && (wDir < 78.75)) {
+                wCompass = "East North East";
+            } else if ((wDir > 78.75) && (wDir < 101.25)) {
+                wCompass = "East";
+            } else if ((wDir > 101.25) && (wDir < 123.75)) {
+                wCompass = "East South East";
+            } else if ((wDir > 123.75) && (wDir < 146.25)) {
+                wCompass = "South East";
+            } else if ((wDir > 146.25) && (wDir < 168.75)) {
+                wCompass = "South South East";
+            } else if ((wDir > 168.75) && (wDir < 191.25)) {
+                wCompass = "South";
+            } else if ((wDir > 191.25) && (wDir < 213.75)) {
+                wCompass = "South South West";
+            } else if ((wDir > 213.75) && (wDir < 236.25)) {
+                wCompass = "South West";
+            } else if ((wDir > 236.25) && (wDir < 258.75)) {
+                wCompass = "West South West";
+            } else if ((wDir > 258.75) && (wDir < 281.25)) {
+                wCompass = "West";
+            } else if ((wDir > 281.25) && (wDir < 303.75)) {
+                wCompass = "West North West";
+            } else if ((wDir > 303.75) && (wDir < 326.25)) {
+                wCompass = "North West";
+            } else if((wDir > 326.25) && (wDir < 348.75)){
+                wCompass = "North North West";
+            }
+            return wCompass;
+        },
+
+        getWindChill(temp, wSpeed) {
+            if ((temp > 9) && (wSpeed > 4.8)){
+                windChill = (13.12 + (0.6215 * temp) - 11.37 * ((wSpeed ** 0.16) + (0.3965 * temp) * (wSpeed ** 0.16) ));
+                return (windchill * 100)/100.0; 
+            }else{
+                return temp;
+            }
+        },  
+    };
     
