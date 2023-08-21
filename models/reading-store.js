@@ -41,9 +41,10 @@ export const readingStore = {
     },
 
     async updateReading() {
-        reading.code = updatedReading.title;
+        reading.code = updatedReading.code;
         reading.temp = updatedReading.temp;
         reading.wSpeed = updatedReading.wSpeed;
+        reading.pressure = updatedReading.pressure;
         await db.write();
     }
 }

@@ -1,0 +1,44 @@
+<div class="columns">
+  <div class="tile is-parent">
+    <article class="tile is-child box has-background-grey-darker">
+        <p class="title has-text-white">
+            {{station.title}}
+        </p>
+    </article>
+  </div>
+  <div class="tile is-parent">
+    <div class="tile is-child box has-background-grey-darker">
+        <p class="title has-text-white">
+            Weather
+        </p>
+        <h3 class="has-text-white"> {{latestWeather.wCode}}</h3>    
+    </div>
+   </div> 
+   <div class="tile is-parent">
+    <div class="tile is-child box has-background-grey-darker">
+        <p class="title has-text-white">
+            Temp
+            </p>
+        <h3 class="has-text-white">
+            {{latestWeather.temp}} C<br>
+            {{latestWeather.fTemp}} F
+        </h3>    
+    </div>
+   </div> 
+    <div class="tile is-parent">
+    <div class="tile is-child box has-background-grey-darker">
+        <p class="title has-text-white">
+            Wind
+        </p>
+        <h3 class="has-text-white">{{latestWeather.bFort}} bft</h3>        
+    </div>
+   </div> 
+       <div class="tile is-parent">
+    <div class="tile is-child box has-background-grey-darker">
+        <p class="title has-text-white">
+            Pressure
+        </p>
+        <h3 class="has-text-white">{{latestWeather.pressure}} hpa</h3>        
+    </div>
+   </div> 
+</div>

@@ -2,32 +2,24 @@
   "file": "./models/stations.json",
   "stations": [
     {
+      "title": "Tramore",
+      "_id": "01"
+    },
+    {
+      "title": "Dromore",
+      "_id": "05"
+    },
+    {
       "title": "Gorey",
-      "_id": "e34b1c2b-4db7-4745-bb15-facc0516ef26"
-    },
-    {
-      "title": "Ballymoney",
-      "_id": "203b0caa-8d58-41cc-a96e-480cb0df4549"
-    },
-    {
-      "title": "Cahore",
-      "_id": "2054c9fc-8aca-47b1-b249-e2ae08ed7def"
-    },
-    {
-      "title": "Tara Hill",
-      "_id": "93320d2e-81c8-4833-8f23-e257f29dddad"
-    },
-    {
-      "title": "",
-      "_id": "9e85ebe5-c590-4542-9cfb-ae084cef4fd3"
+      "_id": "0c5adf5b-3b4e-4689-85df-6a6b78996ff0"
     },
     {
       "title": "Tramore",
-      "_id": "b60b9a34-9275-4f5d-9667-629e101bcc50"
+      "_id": "fddacb06-154c-43d6-81b1-7c1842f6273f"
     },
     {
-      "title": "Dunmore",
-      "_id": "90174d79-6c4b-4aef-bc58-0264ea03b5af"
+      "title": "Dromore",
+      "_id": "71c8c8ef-3333-4816-8327-7b987b24ab31"
     }
   ]
 }

@@ -2,53 +2,70 @@
   "file": "./models/readings.json",
   "readings": [
     {
-      "code": 400,
-      "temp": 20,
-      "wSpeed": 5,
-      "_id": "55d8063d-ed12-4051-9114-40e24713fde7",
-      "stationid": "e34b1c2b-4db7-4745-bb15-facc0516ef26"
-    },
-    {
-      "code": 400,
-      "temp": 20,
-      "wSpeed": 5,
-      "_id": "b82673c4-abef-4f3d-bd22-a48c214a84a7",
-      "stationid": "e34b1c2b-4db7-4745-bb15-facc0516ef26"
-    },
-    {
-      "code": 400,
-      "temp": 12,
-      "wSpeed": 8,
-      "_id": "cf7744b7-9b27-4fd7-b631-ea9aac822584",
-      "stationid": "e34b1c2b-4db7-4745-bb15-facc0516ef26"
-    },
-    {
       "code": 800,
       "temp": 0.5,
       "wSpeed": 3.5,
-      "_id": "01cf2f62-37b5-4842-b86c-8b4c56ddfc5d",
-      "stationid": "b60b9a34-9275-4f5d-9667-629e101bcc50"
+      "pressure": 1002,
+      "wCode": "Thunder",
+      "fTemp": 32.9,
+      "bFort": 1,
+      "_id": "66bed1f3-00c9-408a-a933-209076e491f9",
+      "stationid": "fddacb06-154c-43d6-81b1-7c1842f6273f"
     },
     {
       "code": 600,
       "temp": 6,
       "wSpeed": 2,
-      "_id": "79a59aab-fae8-4de1-b0c9-f03f0748ca45",
-      "stationid": "b60b9a34-9275-4f5d-9667-629e101bcc50"
+      "pressure": 1004,
+      "wCode": "Rain",
+      "fTemp": 42.8,
+      "bFort": 1,
+      "_id": "c9d00293-a24b-4cea-bdfc-3141751ce862",
+      "stationid": "fddacb06-154c-43d6-81b1-7c1842f6273f"
     },
     {
       "code": 700,
       "temp": 8,
       "wSpeed": 1,
-      "_id": "30f46531-7f68-4515-bfec-da68d4623c65",
-      "stationid": "90174d79-6c4b-4aef-bc58-0264ea03b5af"
+      "pressure": 1005,
+      "wCode": "Snow",
+      "fTemp": 46.4,
+      "bFort": 0,
+      "_id": "ad77a315-7971-4f70-82e9-9727a91a07d1",
+      "stationid": "fddacb06-154c-43d6-81b1-7c1842f6273f"
+    },
+    {
+      "code": 100,
+      "temp": 18,
+      "wSpeed": 12,
+      "pressure": 1000,
+      "wCode": "Clear",
+      "fTemp": 64.4,
+      "bFort": 3,
+      "_id": "efc4ca5f-e011-4818-8501-fbfcca9cac0c",
+      "stationid": "fddacb06-154c-43d6-81b1-7c1842f6273f"
+    },
+    {
+      "code": 700,
+      "temp": 8,
+      "wSpeed": 1,
+      "pressure": 999,
+      "wCode": "Snow",
+      "fTemp": 46.4,
+      "bFort": 0,
+      "_id": "87c37152-9036-4cd3-8c6f-0fdb12da6854",
+      "stationid": "71c8c8ef-3333-4816-8327-7b987b24ab31"
     },
     {
       "code": 200,
       "temp": 0.5,
       "wSpeed": 3.5,
-      "_id": "86c29394-0f00-48ee-a20e-125e2643b613",
-      "stationid": "90174d79-6c4b-4aef-bc58-0264ea03b5af"
+      "pressure": 1000,
+      "wCode": "Partial Clouds",
+      "fTemp": 32.9,
+      "bFort": 1,
+      "_id": "e4d8fd6a-fcf5-4e50-ae07-3fb0a83442f6",
+      "stationid": "71c8c8ef-3333-4816-8327-7b987b24ab31"
     }
   ]
 }
