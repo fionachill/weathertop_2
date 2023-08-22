@@ -9,12 +9,16 @@ export const stationController = {
         const latestWeather = analytics.latestWeather(station);
         const title = await station.title;
         const code = await station.code;
-        const wCode = await conversions.wCode;
+        const wCode = await station.wCode; 
+        const latitude = await station.latitude;
+        const longitude = await station.longitude;
         const viewData = {
             title: "Station",
             station: station,
             latestWeather: latestWeather,
-            wCode: wCode
+            wCode: wCode,
+            latitude: latitude,
+            longitude: longitude
         };
         response.render("station-view", viewData);
     },

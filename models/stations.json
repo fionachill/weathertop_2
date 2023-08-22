@@ -3,11 +3,21 @@
   "stations": [
     {
       "title": "Tramore",
+      "latitude": 52.16235,
+      "longitude": -7.15244,
       "_id": "7c260d88-21f9-4d34-9815-bcf31bc32941"
     },
     {
       "title": "Dunmore",
+      "latitude": 52.1499994,
+      "longitude": -6.9833294,
       "_id": "5096b827-c69f-48c5-9ecc-8860eadf44f9"
+    },
+    {
+      "title": "Tara Hill",
+      "latitude": 52.6991,
+      "longitude": 6.2177,
+      "_id": "ec5845c3-dae6-485b-9fe5-750a1c1e9bc1"
     }
   ]
 }
