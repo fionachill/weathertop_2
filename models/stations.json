@@ -18,6 +18,49 @@
       "latitude": 52.6991,
       "longitude": 6.2177,
       "_id": "ec5845c3-dae6-485b-9fe5-750a1c1e9bc1"
+    },
+    {
+      "title": "Springfield",
+      "latitude": 52.8756,
+      "longitude": -14.888,
+      "_id": "8784e359-3272-463c-a923-36c2ab3b62dd"
+    },
+    {
+      "title": "Shelbyville",
+      "latitude": 0,
+      "longitude": 0,
+      "_id": "6d0f29cc-6897-4c2f-9e04-b8549f391625"
+    },
+    {
+      "title": "Capitol City",
+      "firstName": "Homer",
+      "latitude": 0,
+      "longitude": 0,
+      "_id": "8e16816a-338b-4b0d-98a2-1f8be2bfa3d5"
+    },
+    {
+      "title": "Hollywood",
+      "userid": "038036aa-427a-4941-9edf-167faa199ad1",
+      "firstName": "Betty",
+      "latitude": 14.852,
+      "longitude": -6.1445,
+      "_id": "a41df9ca-9dbc-4b12-9ed2-ad9ff2474f45"
+    },
+    {
+      "title": "Tramore",
+      "userid": "128a48bd-8146-4a4e-b5f0-1e6b287a8e03",
+      "firstName": "Homer",
+      "latitude": 52.16235,
+      "longitude": -7.15244,
+      "_id": "11c3b2f0-f90f-49ce-8761-9dca9927020f"
+    },
+    {
+      "title": "Dunmore",
+      "userid": "128a48bd-8146-4a4e-b5f0-1e6b287a8e03",
+      "firstName": "Homer",
+      "latitude": 52.1499994,
+      "longitude": -6.9833294,
+      "_id": "bf34504c-7d7c-40d7-bdf1-3801377ae3a7"
     }
   ]
 }
