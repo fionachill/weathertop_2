@@ -96,9 +96,11 @@ export const conversions = {
         },
 
         getWindChill(temp, wSpeed) {
+            let windChill = null; 
             if ((temp > 9) && (wSpeed > 4.8)){
-                windChill = (13.12 + (0.6215 * temp) - 11.37 * ((wSpeed ** 0.16) + (0.3965 * temp) * (wSpeed ** 0.16) ));
-                return (windchill * 100)/100.0; 
+                windChill = ((13.12 + (0.6215 * temp) - 11.37 * (Math.pow(wSpeed, 0.16)) + (0.3965 * temp) * Math.pow(wSpeed, 0.16) )) ;
+                windChill =  windChill.toFixed();
+                return windChill;
             }else{
                 return temp;
             }

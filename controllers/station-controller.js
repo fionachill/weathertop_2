@@ -12,13 +12,25 @@ export const stationController = {
         const wCode = await station.wCode; 
         const latitude = await station.latitude;
         const longitude = await station.longitude;
+        const maxTemp = await analytics.getMaxTemp(station);
+        const minTemp = await analytics.getMinTemp(station);
+        const maxWSpeed = await analytics.getMaxWSpeed(station);
+        const minWSpeed = await analytics.getMinWSpeed(station);
+        const maxPressure = await analytics.getMaxPressure(station);
+        const minPressure = await analytics.getMinPressure(station);
         const viewData = {
             title: "Station",
             station: station,
             latestWeather: latestWeather,
             wCode: wCode,
             latitude: latitude,
-            longitude: longitude
+            longitude: longitude,
+            maxTemp: maxTemp,
+            minTemp: minTemp,
+            maxWSpeed: maxWSpeed,
+            minWSpeed: minWSpeed,
+            maxPressure: maxPressure,
+            minPressure: minPressure,
         };
         response.render("station-view", viewData);
     },
@@ -35,7 +47,7 @@ export const stationController = {
            fTemp: Number(conversions.fTemp(request.body.temp)),
            bFort: Number(conversions.bFort(request.body.wSpeed)),
            wCompass: String(conversions.getWCompass(request.body.wDir)),
-           windChill: Number(conversions.getWindChill(request.body.temp, request.body.wSpeed))
+           windChill: Number(conversions.getWindChill(Number(request.body.temp), Number(request.body.wSpeed))),
         };
         console.log(`adding new reading to ${station.title}`);
         await readingStore.addReading(station._id, newReading);

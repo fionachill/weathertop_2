@@ -23,7 +23,9 @@
             </p>
         <h3 class="has-text-white">
             {{latestWeather.temp}} C<br>
-            {{latestWeather.fTemp}} F
+            {{latestWeather.fTemp}} F<br>
+            Max: {{maxTemp}} C<br>            
+            Min: {{minTemp}} C
         </h3>    
     </div>
    </div> 
@@ -34,7 +36,11 @@
         </p>
         <h3 class="has-text-white">{{latestWeather.bFort}} bft</h3>
         <h3 class="has-text-white"> {{latestWeather.wCompass}}</h3>  
-        <h3 class="has-text-white">Feels like: <br>{{latestWeather.windChill}}</h3>      
+        <h3 class="has-text-white">Feels like: {{latestWeather.windChill}} C</h3>
+        <h3 class="has-text-white">  
+            Max: {{maxWSpeed}} <br>            
+            Min: {{minWSpeed}}   
+        </h3>           
     </div>
    </div> 
        <div class="tile is-parent">
@@ -42,7 +48,11 @@
         <p class="title has-text-white">
             Pressure
         </p>
-        <h3 class="has-text-white">{{latestWeather.pressure}} hpa</h3>        
+        <h3 class="has-text-white">{{latestWeather.pressure}} hpa</h3>
+        <h3 class="has-text-white">  
+            Max: {{maxPressure}} <br>            
+            Min: {{minPressure}}   
+        </h3>          
     </div>
    </div> 
 </div>

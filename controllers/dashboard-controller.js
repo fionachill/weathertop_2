@@ -17,10 +17,10 @@ export const dashboardController = {
     const loggedInUser = await accountsController.getLoggedInUser(request);
     const newStation = {
       title: request.body.title,
-      userid: loggedInUser._id,
       firstName: loggedInUser.firstName,
       latitude: Number(request.body.latitude),
       longitude: Number(request.body.longitude),
+      userid: loggedInUser._id,
     };
     console.log(`adding station ${newStation.title} to ${newStation.firstName}'s dashboard`);
     await stationStore.addStation(newStation);
