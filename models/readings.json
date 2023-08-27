@@ -633,6 +633,51 @@
       "wIcon": "fa-solid fa-lg fa-cloud-showers-heavy fa-2xl",
       "_id": "7f6757c4-9639-49b3-8140-70f84a575e8d",
       "stationid": "a41df9ca-9dbc-4b12-9ed2-ad9ff2474f45"
+    },
+    {
+      "code": 200,
+      "temp": 0.5,
+      "wSpeed": 3.5,
+      "wDir": 120,
+      "pressure": 999,
+      "wCode": "Partial Clouds",
+      "fTemp": 32.9,
+      "bFort": 1,
+      "wCompass": "East South East",
+      "windChill": 0.5,
+      "wIcon": "fa-solid fa-lg fa-cloud-sun fa-2xl",
+      "_id": "c094cd24-d635-49d1-a376-ab3e8f9adb82",
+      "stationid": "bf34504c-7d7c-40d7-bdf1-3801377ae3a7"
+    },
+    {
+      "code": 500,
+      "temp": 0,
+      "wSpeed": 0,
+      "wDir": 0,
+      "pressure": 0,
+      "wCode": "Heavy Showers",
+      "fTemp": 32,
+      "bFort": 0,
+      "wCompass": "null",
+      "windChill": 0,
+      "wIcon": "fa-solid fa-lg fa-cloud-showers-heavy fa-2xl",
+      "_id": "1880cd95-8b78-49f7-85be-29d116f0fd4f",
+      "stationid": "a41df9ca-9dbc-4b12-9ed2-ad9ff2474f45"
+    },
+    {
+      "code": 800,
+      "temp": 0,
+      "wSpeed": 0,
+      "wDir": 0,
+      "pressure": 0,
+      "wCode": "Thunder",
+      "fTemp": 32,
+      "bFort": 0,
+      "wCompass": "North",
+      "windChill": 0,
+      "wIcon": "fa-solid fa-lg fa-cloud-bolt fa-2xl",
+      "_id": "01822b26-1aae-4352-8aa6-7585623f1824",
+      "stationid": "a41df9ca-9dbc-4b12-9ed2-ad9ff2474f45"
     }
   ]
 }

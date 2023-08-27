@@ -1,11 +1,13 @@
-# Weather Top v1.0
+# Weather Top V.4.0.0
 
 This is an app for logging weather readings.
 
-Baseline is an app that launches and reads some readings for a small number of weather stations. 
+WeatherTop is an app that launches and reads some readings for a small number of weather stations. 
 Each reading consists of:
-* Weather Code (number in range 100-800), integer
-* Temp (C) decimal
-* Wind Speed (kM/hr) decimal
+* Station name - including Latitude and Longitude
+* Weather Code (number in range 100-800) 
+* Temperature in Celsius and Farenheit (maximum and minimum temperature readings)
+* Wind Speed, wind chill and wind compass (maximum and minimum wind speed)
+* Pressure (maximum and minimum pressure )
 
-These readings are then presented on the dashboard. 
+ 

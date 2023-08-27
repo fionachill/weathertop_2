@@ -1,12 +1,12 @@
-const wConditions = new Map();
-wConditions.set(100, { description: "Clear", WIcon: "fa-solid fa-sun" });
-wConditions.set(200, { description: "Partial Clouds", WIcon: "fa-solid fa-cloud-sun" });
-wConditions.set(300, { description: "Cloudy", WIcon: "fa-solid fa-cloud"});
-wConditions.set(400, { description: "Light Showers", WIcon: "fa-solid fa-cloud-rain"});
-wConditions.set(500, { description: "Heavy Showers", WIcon: "fa-solid fa-cloud-showers-heavy"});
-wConditions.set(600, { description: "Rain", WIcon: "fa-solid fa-cloud-showers-water"});
-wConditions.set(700, { description: "Snow", WIcon: "fa-solid fa-snowflake"});
-wConditions.set(800, { description: "Thunder", WIcon: "fa-solid fa-cloud-bolt"});
+// const wConditions = new Map();
+// wConditions.set(100, { description: "Clear", WIcon: "fa-solid fa-sun" });
+// wConditions.set(200, { description: "Partial Clouds", WIcon: "fa-solid fa-cloud-sun" });
+// wConditions.set(300, { description: "Cloudy", WIcon: "fa-solid fa-cloud"});
+// wConditions.set(400, { description: "Light Showers", WIcon: "fa-solid fa-cloud-rain"});
+// wConditions.set(500, { description: "Heavy Showers", WIcon: "fa-solid fa-cloud-showers-heavy"});
+// wConditions.set(600, { description: "Rain", WIcon: "fa-solid fa-cloud-showers-water"});
+// wConditions.set(700, { description: "Snow", WIcon: "fa-solid fa-snowflake"});
+// wConditions.set(800, { description: "Thunder", WIcon: "fa-solid fa-cloud-bolt"});
 
 
 export const conversions = {
@@ -64,11 +64,6 @@ export const conversions = {
         return wIcon;
     },
 
-    // getWIcon(code){ 
-    //     let WIcon = wConditions.get(code).WIcon;
-    //     return WIcon;
-    // },
-   
 
 
         fTemp(temp) {
@@ -107,7 +102,7 @@ export const conversions = {
             },
 
         getWCompass(wDir){
-            let wCompass = null;
+            let wCompass = "North";
             if ((wDir > 348.75) && (wDir < 11.25)) {
                 wCompass = "North";
             } else if ((wDir > 11.25) && (wDir < 33.75)) {
