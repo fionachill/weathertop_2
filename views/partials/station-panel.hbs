@@ -4,8 +4,13 @@
         <p class="title has-text-white">
             {{station.title}}
         </p>
-        <h3 class="has-text-white"> {{station.latitude}}</h3>  
-        <h3 class="has-text-white"> {{station.longitude}}</h3>          
+        <div class="is-pulled-right">
+            {{>icons/location}} 
+        </div>
+        <h3 class="has-text-white"> 
+            {{station.latitude}}<br>
+            {{station.longitude}}
+        </h3>
     </article>
   </div>
   <div class="tile is-parent">
@@ -13,6 +18,11 @@
         <p class="title has-text-white">
             Weather
         </p>
+        <div class="is-pulled-right">  
+            <span class="icon has-text-danger">
+                <i class="{{latestWeather.wIcon}}"></i>  
+            </span> 
+        </div>
         <h3 class="has-text-white"> {{latestWeather.wCode}}</h3>    
     </div>
    </div> 
@@ -20,7 +30,10 @@
     <div class="tile is-child box has-background-grey-darker">
         <p class="title has-text-white">
             Temp
-            </p>
+        </p>
+        <div class="is-pulled-right">
+            {{>icons/temperature}} 
+        </div>
         <h3 class="has-text-white">
             {{latestWeather.temp}} C<br>
             {{latestWeather.fTemp}} F<br>
@@ -33,6 +46,9 @@
     <div class="tile is-child box has-background-grey-darker">
         <p class="title has-text-white">
             Wind
+        </p>
+        <p class="is-pulled-right">
+            {{>icons/wind}} 
         </p>
         <h3 class="has-text-white">{{latestWeather.bFort}} bft</h3>
         <h3 class="has-text-white"> {{latestWeather.wCompass}}</h3>  
@@ -48,7 +64,10 @@
         <p class="title has-text-white">
             Pressure
         </p>
-        <h3 class="has-text-white">{{latestWeather.pressure}} hpa</h3>
+        <p class="is-pulled-right">
+            {{>icons/pressure}} 
+        </p>
+        <h3 class="has-text-white">{{latestWeather.pressure}} hpa</h3>   
         <h3 class="has-text-white">  
             Max: {{maxPressure}} <br>            
             Min: {{minPressure}}   

@@ -1,3 +1,14 @@
+const wConditions = new Map();
+wConditions.set(100, { description: "Clear", WIcon: "fa-solid fa-sun" });
+wConditions.set(200, { description: "Partial Clouds", WIcon: "fa-solid fa-cloud-sun" });
+wConditions.set(300, { description: "Cloudy", WIcon: "fa-solid fa-cloud"});
+wConditions.set(400, { description: "Light Showers", WIcon: "fa-solid fa-cloud-rain"});
+wConditions.set(500, { description: "Heavy Showers", WIcon: "fa-solid fa-cloud-showers-heavy"});
+wConditions.set(600, { description: "Rain", WIcon: "fa-solid fa-cloud-showers-water"});
+wConditions.set(700, { description: "Snow", WIcon: "fa-solid fa-snowflake"});
+wConditions.set(800, { description: "Thunder", WIcon: "fa-solid fa-cloud-bolt"});
+
+
 export const conversions = {
 
     getWCode(code) {
@@ -21,6 +32,44 @@ export const conversions = {
             }
             return wCode;
         },
+
+        getWIcon(code) {
+        let wIcon = null;
+        switch (code) {
+            case '100':
+                wIcon = "fa-solid fa-sun fa-2xl";
+                break;
+            case '200':
+                wIcon = "fa-solid fa-lg fa-cloud-sun fa-2xl";
+                break;
+            case '300':
+                wIcon =  "fa-solid fa-lg fa-cloud fa-2xl";
+                break;
+            case '400':
+                wIcon =  "fa-solid fa-lg fa-cloud-rain fa-2xl";
+                break;
+            case '500':
+                wIcon = "fa-solid fa-lg fa-cloud-showers-heavy fa-2xl";
+                break;
+            case '600':
+                wIcon = "fa-solid fa-lg fa-cloud-showers-water fa-2xl";
+                break;
+            case '700':
+                wIcon = "fa-solid fa-lg fa-snowflake fa-2xl";
+                break;
+            case '800':
+                wIcon = "fa-solid fa-lg fa-cloud-bolt fa-2xl";
+                break;
+        }
+        return wIcon;
+    },
+
+    // getWIcon(code){ 
+    //     let WIcon = wConditions.get(code).WIcon;
+    //     return WIcon;
+    // },
+   
+
 
         fTemp(temp) {
             let ftemp = (temp * 9/5) + 32;

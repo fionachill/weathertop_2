@@ -9,6 +9,7 @@ export const stationController = {
         const latestWeather = analytics.latestWeather(station);
         const title = await station.title;
         const code = await station.code;
+        const wIcon = await station.wIcon;
         const wCode = await station.wCode; 
         const latitude = await station.latitude;
         const longitude = await station.longitude;
@@ -23,6 +24,7 @@ export const stationController = {
             station: station,
             latestWeather: latestWeather,
             wCode: wCode,
+            wIcon: wIcon,
             latitude: latitude,
             longitude: longitude,
             maxTemp: maxTemp,
@@ -48,6 +50,7 @@ export const stationController = {
            bFort: Number(conversions.bFort(request.body.wSpeed)),
            wCompass: String(conversions.getWCompass(request.body.wDir)),
            windChill: Number(conversions.getWindChill(Number(request.body.temp), Number(request.body.wSpeed))),
+           wIcon: String(conversions.getWIcon(request.body.code))
         };
         console.log(`adding new reading to ${station.title}`);
         await readingStore.addReading(station._id, newReading);
