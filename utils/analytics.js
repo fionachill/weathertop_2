@@ -14,15 +14,17 @@ export const analytics = {
         getMaxTemp(station){
             let maxTemp = null;
             if (station.readings.length > 0) {
-                maxTemp = station.readings[0];
+               maxTemp = station.readings[0];
                 for (let i = 1; i < station.readings.length; i ++) {
                     if (station.readings[i].temp > maxTemp.temp){
                         maxTemp = station.readings[i];
                     }
                 }
-            }
-            return maxTemp.temp;
-        },
+                return maxTemp.temp;
+            } else {
+            return 0;
+        }
+    },
         
         getMinTemp(station){
             let minTemp = null;
@@ -33,8 +35,10 @@ export const analytics = {
                         minTemp = station.readings[i];
                     }
                 }
+                return minTemp.temp;
+            }else{
+            return 0;
             }
-            return minTemp.temp;
         },
 
         getMaxWSpeed(station){
@@ -46,8 +50,11 @@ export const analytics = {
                         maxWSpeed = station.readings[i];
                     }
                 }
+                return maxWSpeed.wSpeed;
+            }else{
+                return 0;
             }
-            return maxWSpeed.wSpeed;
+            
         },
         
         getMinWSpeed(station){
@@ -59,8 +66,11 @@ export const analytics = {
                         minWSpeed = station.readings[i];
                     }
                 }
+                return minWSpeed.wSpeed;
+            }else{
+                return 0;
             }
-            return minWSpeed.wSpeed;
+            
         },
 
         getMaxPressure(station){
@@ -72,8 +82,11 @@ export const analytics = {
                         maxPressure = station.readings[i];
                     }
                 }
+                return maxPressure.pressure;
+            }else {
+                return 0;
             }
-            return maxPressure.pressure;
+            
         },
         
         getMinPressure(station){
@@ -85,8 +98,11 @@ export const analytics = {
                         minPressure = station.readings[i];
                     }
                 }
+                return minPressure.pressure;
+            }else{
+                return 0;
             }
-            return minPressure.pressure;
+            
         },    
 
     };

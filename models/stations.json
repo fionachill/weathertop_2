@@ -39,14 +39,6 @@
       "_id": "8e16816a-338b-4b0d-98a2-1f8be2bfa3d5"
     },
     {
-      "title": "Hollywood",
-      "userid": "038036aa-427a-4941-9edf-167faa199ad1",
-      "firstName": "Betty",
-      "latitude": 14.852,
-      "longitude": -6.1445,
-      "_id": "a41df9ca-9dbc-4b12-9ed2-ad9ff2474f45"
-    },
-    {
       "title": "Tramore",
       "userid": "128a48bd-8146-4a4e-b5f0-1e6b287a8e03",
       "firstName": "Homer",
@@ -61,6 +53,14 @@
       "latitude": 52.1499994,
       "longitude": -6.9833294,
       "_id": "bf34504c-7d7c-40d7-bdf1-3801377ae3a7"
+    },
+    {
+      "title": "Hollywood",
+      "firstName": "Betty",
+      "latitude": 0,
+      "longitude": 0,
+      "userid": "038036aa-427a-4941-9edf-167faa199ad1",
+      "_id": "428650df-b5c7-461a-b17e-e47dc956c9f1"
     }
   ]
 }

@@ -6,6 +6,7 @@
             <th>Wind Speed</th>
             <th>Wind Direction</th>
             <th>Pressure</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -26,7 +27,11 @@
             <td>
                 {{pressure}}
             </td>
+            <td>
+                 <a href="/station/{{../station._id}}/deletereading/{{_id}}" class="button">
+                 {{>icons/delete}}
+            </td>
         </tr>
-        {{/each}}
     </tbody>
+        {{/each}}
 </table>
