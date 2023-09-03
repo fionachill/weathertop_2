@@ -7,6 +7,13 @@
 // wConditions.set(600, { description: "Rain", WIcon: "fa-solid fa-cloud-showers-water"});
 // wConditions.set(700, { description: "Snow", WIcon: "fa-solid fa-snowflake"});
 // wConditions.set(800, { description: "Thunder", WIcon: "fa-solid fa-cloud-bolt"});
+const now = new Date();
+let year = now.getUTCFullYear();
+let month = now.getUTCMonth() + 1;
+let day = now.getUTCDate();
+let hours = now.getUTCHours();
+let minutes =  now.getUTCMinutes();
+let seconds = now.getUTCSeconds();
 
 
 export const conversions = {
@@ -37,7 +44,7 @@ export const conversions = {
         let wIcon = null;
         switch (code) {
             case '100':
-                wIcon = "fa-solid fa-sun fa-2xl";
+                wIcon = "fa-solid fa-lg fa-sun fa-2xl";
                 break;
             case '200':
                 wIcon = "fa-solid fa-lg fa-cloud-sun fa-2xl";
@@ -149,5 +156,11 @@ export const conversions = {
                 return temp;
             }
         },  
+
+        date(){
+            let date = (`${year}-${month}-${day} ${hours}:${minutes}:${seconds}`);
+            return date;
+        },
+
     };
     

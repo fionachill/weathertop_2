@@ -32,14 +32,18 @@
             Temp
         </p>
         <div class="is-pulled-right">
-            {{>icons/temperature}} 
+            {{>icons/temperature}}
         </div>
         <h3 class="has-text-white">
             {{latestWeather.temp}} C<br>
             {{latestWeather.fTemp}} F<br>
             Max: {{maxTemp}} C<br>            
             Min: {{minTemp}} C
-        </h3>    
+        </h3>
+        <br>
+        <span class="icon has-text-success is-pulled-right">
+            <i class="{{tempTrend}}"></i>
+        </span>    
     </div>
    </div> 
     <div class="tile is-parent">
@@ -56,7 +60,10 @@
         <h3 class="has-text-white">  
             Max: {{maxWSpeed}} <br>            
             Min: {{minWSpeed}}   
-        </h3>           
+        </h3>
+        <span class="icon has-text-success is-pulled-right">
+            <i class="{{windTrend}}"></i>
+        </span>            
     </div>
    </div> 
        <div class="tile is-parent">
@@ -71,7 +78,12 @@
         <h3 class="has-text-white">  
             Max: {{maxPressure}} <br>            
             Min: {{minPressure}}   
-        </h3>          
+        </h3>
+        <br>
+        <br>
+        <span class="icon has-text-success is-pulled-right">
+            <i class="{{windTrend}}"></i>
+        </span>            
     </div>
    </div> 
 </div>

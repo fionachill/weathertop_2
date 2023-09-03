@@ -19,6 +19,9 @@ export const stationController = {
         const minWSpeed = await analytics.getMinWSpeed(station);
         const maxPressure = await analytics.getMaxPressure(station);
         const minPressure = await analytics.getMinPressure(station);
+        const tempTrend = await analytics.tempTrend(station);
+        const windTrend = await analytics.windTrend(station);
+        const pressureTrend = await analytics.pressureTrend(station);
         const viewData = {
             title: "Station",
             station: station,
@@ -33,6 +36,9 @@ export const stationController = {
             minWSpeed: minWSpeed,
             maxPressure: maxPressure,
             minPressure: minPressure,
+            tempTrend: tempTrend,
+            windTrend: windTrend,
+            pressureTrend: pressureTrend,
         };
         response.render("station-view", viewData);
     },
@@ -40,6 +46,7 @@ export const stationController = {
     async addReading(request, response) {
         const station = await stationStore.getStationById(request.params.id);
         const newReading = {
+           date: String(new Date()), 
            code: Number(request.body.code),
            temp: Number(request.body.temp),
            wSpeed: Number(request.body.wSpeed), 
